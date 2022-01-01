@@ -80,6 +80,6 @@ internal class PromptStatementOne @JvmOverloads constructor(
     }
 
     companion object {
-        private const val CMD_PWD = "echo \${PWD:-?}"
+        private const val CMD_PWD = "export HOME=/data/data/com.jaredrummler.ktsh.demo/"
     }
 }
