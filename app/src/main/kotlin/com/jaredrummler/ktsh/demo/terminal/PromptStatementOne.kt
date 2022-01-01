@@ -86,6 +86,6 @@ internal class PromptStatementOne @JvmOverloads constructor(
  
         private const val CMD_LD = "export LD_LIBRARY_PATH=/data/data/com.m4coding.ide/lib"
   
-        private const val CMD_BIN = "export PATH=$PATH:/data/data/com.m4coding.ide/bin"
+        private const val CMD_BIN = "export PATH=/data/data/com.m4coding.ide/bin"
   }
 }
