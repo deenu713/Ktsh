@@ -68,8 +68,10 @@ internal class PromptStatementOne @JvmOverloads constructor(
                 this.typeface = Typeface.MONOSPACE
                 this.ellipsize = TextUtils.TruncateAt.MIDDLE
                 this.isSingleLine = true
-                this.maxLines = 1
+                this.maxLines = 2
                 this.text = shell.run(CMD_PWD, silent()).stdout()
+                this.text = shell.run(CMD_LD, silent()).stdout()
+            
             }
         )
     }
@@ -80,7 +82,8 @@ internal class PromptStatementOne @JvmOverloads constructor(
     }
 
     companion object {
-        private const val CMD_PWD = "export LD_LIBRARY_PATH=/data/app/com.m4coding.ide-g6phS2xAhMo2UnDSedtLQg==/lib/arm64
-export HOME=/data/data/com/jaredrummler/ktsh/demo"
+        private const val CMD_PWD = "export HOME=/data/data/com/jaredrummler/ktsh/demo"
+ 
+        private const val CMD_LD = "export LD_LIBRARY_PATH=/data/app/com.m4coding.ide-g6phS2xAhMo2UnDSedtLQg==/lib/arm64"
     }
 }
