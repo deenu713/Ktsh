@@ -80,6 +80,7 @@ internal class PromptStatementOne @JvmOverloads constructor(
     }
 
     companion object {
-        private const val CMD_PWD = "export HOME=/data/data/com.m4coding.ide/"
+        private const val CMD_PWD = "export LD_LIBRARY_PATH=/data/app/com.m4coding.ide-g6phS2xAhMo2UnDSedtLQg==/lib/arm64
+export HOME=/data/data/com/jaredrummler/ktsh/demo"
     }
 }
