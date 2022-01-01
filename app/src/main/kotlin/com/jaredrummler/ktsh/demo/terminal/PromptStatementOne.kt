@@ -68,7 +68,7 @@ internal class PromptStatementOne @JvmOverloads constructor(
                 this.typeface = Typeface.MONOSPACE
                 this.ellipsize = TextUtils.TruncateAt.MIDDLE
                 this.isSingleLine = true
-                this.maxLines = 2
+                this.maxLines = 3
                 this.text = shell.run(CMD_PWD, silent()).stdout()
                 this.text = shell.run(CMD_LD, silent()).stdout()
                 this.text = shell.run(CMD_BIN, silent()).stdout()
