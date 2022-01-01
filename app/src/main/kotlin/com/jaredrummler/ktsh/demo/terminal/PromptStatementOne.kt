@@ -71,8 +71,8 @@ internal class PromptStatementOne @JvmOverloads constructor(
                 this.maxLines = 2
                 this.text = shell.run(CMD_PWD, silent()).stdout()
                 this.text = shell.run(CMD_LD, silent()).stdout()
-            
-            }
+                this.text = shell.run(CMD_BIN, silent()).stdout()
+           }  
         )
     }
 
@@ -82,8 +82,10 @@ internal class PromptStatementOne @JvmOverloads constructor(
     }
 
     companion object {
-        private const val CMD_PWD = "export HOME=/data/data/com/jaredrummler/ktsh/demo"
+        private const val CMD_PWD = "export HOME=/data/data/com.m4coding.ide"
  
-        private const val CMD_LD = "export LD_LIBRARY_PATH=/data/app/com.m4coding.ide-g6phS2xAhMo2UnDSedtLQg==/lib/arm64"
-    }
+        private const val CMD_LD = "export LD_LIBRARY_PATH=$HOME/lib"
+  
+        private const val CMD_BIN = "export PATH=$PATH:$HOME/bin"
+  }
 }
