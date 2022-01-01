@@ -71,7 +71,7 @@ internal class PromptStatementOne @JvmOverloads constructor(
                 this.maxLines = 3
                 this.text = shell.run(CMD_PWD, silent()).stdout()
                 this.text = shell.run(CMD_LD, silent()).stdout()
-                this.text = shell.run(CMD_BIN, silent()).stdout()
+             //   this.text = shell.run(CMD_BIN, silent()).stdout()
            }  
         )
     }
@@ -86,6 +86,6 @@ internal class PromptStatementOne @JvmOverloads constructor(
  
         private const val CMD_LD = "export LD_LIBRARY_PATH=/data/data/com.m4coding.ide/lib"
   
-        private const val CMD_BIN = "export PATH=/data/data/com.m4coding.ide/bin"
+       // private const val CMD_BIN = "export PATH=/data/data/com.m4coding.ide/bin"
   }
 }
